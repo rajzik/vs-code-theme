@@ -1,0 +1,46 @@
+{
+  "name": "rajzik-theme",
+  "displayName": "Rajzik theme",
+  "description": "A dark theme for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "rajzik",
+  "preview": false,
+  "icon": "assets/rajzik-dark.png",
+  "readme": "README.md",
+  "author": {
+    "name": "Rajzik"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rajzik/rajzik-dark/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajzik/rajzik-dark.git"
+  },
+  "homepage": "https://github.com/rajzik/rajzik-dark",
+  "qna": "https://github.com/rajzik/rajzik-dark/issues",
+  "keywords": [
+    "Theme",
+    "Themes"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "rajzik-dark",
+        "label": "Rajzik Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rajzik_dark.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "3.8.1"
+  }
+}
