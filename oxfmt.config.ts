@@ -1,0 +1,28 @@
+export default {
+  arrowParens: 'always',
+  bracketSpacing: true,
+  printWidth: 80,
+  objectWrap: 'preserve',
+  semi: true,
+  bracketSameLine: true,
+  singleAttributePerLine: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  experimentalSortPackageJson: { sortScripts: true },
+  experimentalSortImports: {
+    groups: [
+      'type-builtin',
+      'value-builtin',
+      'type-external',
+      'value-external',
+      'type-internal',
+      'value-internal',
+      ['type-parent', 'type-sibling', 'type-index'],
+      ['value-parent', 'value-sibling', 'value-index'],
+      'style',
+      'unknown',
+    ],
+    newlinesBetween: true,
+  },
+  ignorePatterns: ['dist', 'node_modules', '.turbo', 'pnpm-lock.yaml'],
+};

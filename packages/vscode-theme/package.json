@@ -1,0 +1,58 @@
+{
+  "name": "rajzik-theme",
+  "displayName": "Rajzik theme",
+  "description": "A dark theme for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "rajzik",
+  "preview": false,
+  "icon": "assets/rajzik-dark.png",
+  "author": {
+    "name": "Rajzik"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajzik/vs-code-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rajzik/vs-code-theme/issues"
+  },
+  "homepage": "https://github.com/rajzik/vs-code-theme",
+  "qna": "https://github.com/rajzik/vs-code-theme/issues",
+  "keywords": [
+    "theme",
+    "themes"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "rajzik-dark",
+        "label": "Rajzik Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rajzik_dark.json"
+      }
+    ]
+  },
+  "files": [
+    "assets",
+    "themes",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "format": "oxfmt --no-error-on-unmatched-pattern",
+    "package": "mkdir -p dist && vsce package --allow-package-all-secrets --allow-package-env-file --out dist/rajzik-theme.vsix",
+    "release": "pnpm run package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "3.8.1"
+  }
+}

@@ -1,0 +1,19 @@
+packages:
+  - packages/*
+
+catalog:
+  oxfmt: 0.45.0
+
+catalogMode: prefer
+
+ignoreWorkspaceRootCheck: true
+
+linkWorkspacePackages: true
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - rajzik-theme
+  - '@vscode/vsce'
+
+savePrefix: ''
