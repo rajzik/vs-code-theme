@@ -50,7 +50,7 @@
     "editor.wordHighlightStrongBackground": "#E4E4E430",
     "editorBracketMatch.background": "#E4E4E41E",
     "editorBracketMatch.border": "#14141400",
-    "editorCodeLens.foreground": "#E4E4E442",
+    "editorCodeLens.foreground": "#e4e4e491",
     "editorCursor.foreground": "#E4E4E4EB",
     "editorError.border": "#E3467100",
     "editorError.foreground": "#E34671",
