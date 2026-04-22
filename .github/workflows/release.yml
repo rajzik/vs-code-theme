@@ -63,8 +63,8 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm run version
-          commit: "chore: version packages"
-          title: "chore: version packages"
+          commit: 'chore: version packages'
+          title: 'chore: version packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

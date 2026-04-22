@@ -1,14 +1,13 @@
 {
   "name": "vs-code-theme-workspace",
   "private": true,
-  "packageManager": "pnpm@10.17.1",
   "scripts": {
     "changeset": "changeset",
     "format": "oxfmt . && turbo run format --continue",
     "format:fix": "oxfmt --write . && turbo run format --continue -- --write",
     "package": "turbo run package",
-    "release": "pnpm run version && turbo run release",
-    "version": "changeset version && pnpm install --lockfile-only"
+    "release": "turbo run release",
+    "version": "changeset version"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
@@ -16,5 +15,6 @@
     "oxfmt": "catalog:",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8"
-  }
+  },
+  "packageManager": "pnpm@10.17.1"
 }

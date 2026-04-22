@@ -1,5 +1,5 @@
 ---
-"rajzik-theme": major
+'rajzik-theme': major
 ---
 
 Initial release
