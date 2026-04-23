@@ -1,5 +1,11 @@
 # rajzik-theme
 
+## 1.0.2
+
+### Patch Changes
+
+- [#7](https://github.com/rajzik/vs-code-theme/pull/7) [`d132836`](https://github.com/rajzik/vs-code-theme/commit/d1328367ba46d7f9f0feac4ec2b38ed206822775) Thanks [@rajzik](https://github.com/rajzik)! - Add Open vsx registry to deploy
+
 ## 1.0.1
 
 ### Patch Changes
