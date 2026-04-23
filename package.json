@@ -27,13 +27,13 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "onFail": "error"
+      "onFail": "error",
+      "version": "10.33.1"
     },
     "runtime": {
       "name": "node",
       "onFail": "error",
       "version": "24.14.0"
     }
-  },
-  "packageManager": "pnpm@10.33.1"
+  }
 }

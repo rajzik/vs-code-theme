@@ -13,9 +13,6 @@ catalogMode: prefer
 
 ignoreWorkspaceRootCheck: true
 
-ignoredBuiltDependencies:
-  - keytar
-
 linkWorkspacePackages: true
 
 minimumReleaseAge: 1440
@@ -29,5 +26,6 @@ minimumReleaseAgeExclude:
 
 onlyBuiltDependencies:
   - '@vscode/vsce-sign'
+  - keytar
 
 savePrefix: ''
