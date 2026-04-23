@@ -12,9 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out release tag
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
           ref: ${{ github.event.release.tag_name }}
 
       - uses: ./.github/common-actions/install
