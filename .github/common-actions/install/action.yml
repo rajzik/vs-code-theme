@@ -1,0 +1,36 @@
+name: 'Install'
+description: 'Sets up Node.js and runs install'
+
+runs:
+  using: composite
+  steps:
+    - name: 📦 Setup pnpm
+      uses: pnpm/action-setup@v6
+
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v6
+      with:
+        node-version-file: '.nvmrc'
+        registry-url: 'https://registry.npmjs.org'
+        cache: 'pnpm'
+
+    - name: 🔐 Setup Git User
+      shell: bash
+      run: |
+        git config --global user.name rajzik-bot
+        git config --global user.email silhanu+releasebot@gmail.com
+
+    - name: 📥 Install deps
+      shell: bash
+      run: pnpm install --frozen-lockfile
+
+    # - name: 🔨 Build
+    #   id: build
+    #   shell: bash
+    #   continue-on-error: false
+    #   # Custom turbo build failure information
+    #   run: |
+    #     pnpm build || {
+    #       echo "Turbo build failed with exit code $?"
+    #       exit 1
+    #     }
