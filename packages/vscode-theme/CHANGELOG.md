@@ -1,5 +1,11 @@
 # rajzik-theme
 
+## 1.0.1
+
+### Patch Changes
+
+- [#5](https://github.com/rajzik/vs-code-theme/pull/5) [`8c7a794`](https://github.com/rajzik/vs-code-theme/commit/8c7a794b6aebe8f2e4185f73321ba07cc90cb4d9) Thanks [@rajzik](https://github.com/rajzik)! - fix deploy
+
 ## 1.0.0
 
 ### Major Changes
