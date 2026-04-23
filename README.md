@@ -7,7 +7,6 @@ This repository uses `pnpm` workspaces and Turborepo to manage the VS Code theme
 ```sh
 pnpm install
 pnpm format
-pnpm check-format
 pnpm package
 pnpm changeset
 ```
