@@ -2,7 +2,12 @@ packages:
   - packages/*
 
 catalog:
+  "@rajzik/oxfmt-config": 4.0.0
+  "@rajzik/oxlint-config": 4.0.0
   oxfmt: 0.45.0
+  oxlint: 1.61.0
+  oxlint-tsgolint: 0.21.1
+
 
 catalogMode: prefer
 
@@ -15,5 +20,8 @@ minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - rajzik-theme
   - '@vscode/vsce'
+  - '@rajzik/oxfmt-config'
+  - '@rajzik/oxlint-config'
+  - '@rajzik/configs-shared'
 
 savePrefix: ''
