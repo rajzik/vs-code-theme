@@ -108,7 +108,7 @@ jobs:
       - name: Build release notes
         if: steps.version.outputs.changed == 'true'
         run: |
-          node .github/scripts/release-notes.mjs \
+          node scripts/release-notes.mjs \
             packages/vscode-theme/CHANGELOG.md \
             "${{ steps.version.outputs.current }}" > release-notes.md
 
