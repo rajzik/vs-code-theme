@@ -97,9 +97,14 @@ jobs:
             exit 0
           fi
 
+          if ! PREVIOUS_PACKAGE_JSON="$(git show HEAD^:packages/vscode-theme/package.json 2>/dev/null)"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           PREVIOUS_VERSION="$(
-            git show HEAD^:packages/vscode-theme/package.json \
-              | python3 -c 'import json, sys; print(json.load(sys.stdin)["version"])'
+            python3 -c 'import json, sys; print(json.load(sys.stdin)["version"])' \
+              <<< "${PREVIOUS_PACKAGE_JSON}"
           )"
 
           if [ "${CURRENT_VERSION}" = "${PREVIOUS_VERSION}" ]; then
