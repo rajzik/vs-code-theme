@@ -17,12 +17,23 @@
     "@changesets/cli": "^2.29.7",
     "@rajzik/oxfmt-config": "catalog:",
     "@rajzik/oxlint-config": "catalog:",
-    "oxlint-tsgolint": "catalog:",
-    "oxlint": "catalog:",
     "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "vitest": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    },
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": "24.14.0"
+    }
   },
   "packageManager": "pnpm@10.33.1"
 }
