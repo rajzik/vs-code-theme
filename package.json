@@ -1,46 +1,35 @@
 {
-  "name": "rajzik-theme",
-  "displayName": "Rajzik theme",
-  "description": "A dark theme for Visual Studio Code",
-  "version": "0.0.1",
-  "publisher": "rajzik",
-  "preview": false,
-  "icon": "assets/rajzik-dark.png",
-  "readme": "README.md",
-  "author": {
-    "name": "Rajzik"
-  },
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.100.0"
-  },
-  "bugs": {
-    "url": "https://github.com/rajzik/rajzik-dark/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rajzik/rajzik-dark.git"
-  },
-  "homepage": "https://github.com/rajzik/rajzik-dark",
-  "qna": "https://github.com/rajzik/rajzik-dark/issues",
-  "keywords": [
-    "Theme",
-    "Themes"
-  ],
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "id": "rajzik-dark",
-        "label": "Rajzik Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/rajzik_dark.json"
-      }
-    ]
+  "name": "vs-code-theme-workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "changeset": "changeset",
+    "format": "oxfmt . && turbo run format --continue",
+    "format:fix": "oxfmt --write . && turbo run format --continue -- --write",
+    "lint": "oxlint --type-aware --type-check",
+    "package": "turbo run package",
+    "release": "turbo run release",
+    "test": "vitest run --dir scripts",
+    "version": "changeset version"
   },
   "devDependencies": {
-    "@vscode/vsce": "3.8.1"
-  }
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.7",
+    "@rajzik/oxfmt-config": "catalog:",
+    "@rajzik/oxlint-config": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.8",
+    "vitest": "catalog:"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": "24.14.0"
+    }
+  },
+  "packageManager": "pnpm@10.33.1"
 }

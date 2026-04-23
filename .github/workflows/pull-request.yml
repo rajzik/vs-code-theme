@@ -1,0 +1,25 @@
+name: Pull Request
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: ./.github/common-actions/install
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Check formatting
+        run: pnpm format
+
+      - name: Check linting
+        run: pnpm lint

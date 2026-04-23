@@ -1,0 +1,36 @@
+name: Deploy Release
+
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - uses: ./.github/common-actions/install
+
+      - name: Package extension
+        run: pnpm --filter rajzik-theme run package
+
+      - name: Upload VSIX to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" \
+            packages/vscode-theme/dist/rajzik-theme.vsix \
+            --clobber
+
+      - name: Publish to Visual Studio Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: pnpm --filter rajzik-theme exec vsce publish --skip-duplicate -p "$VSCE_PAT"
