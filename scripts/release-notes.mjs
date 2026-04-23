@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const [, , changelogPath, version] = process.argv;
+const [changelogPath, version] = process.argv.slice(2);
 
 if (!changelogPath || !version) {
   console.error('Usage: node release-notes.mjs <changelog-path> <version>');
@@ -8,7 +8,11 @@ if (!changelogPath || !version) {
 }
 
 const changelog = fs.readFileSync(changelogPath, 'utf8');
-const escapedVersion = version.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const escapedVersion = version.replaceAll(
+  /[.*+?^${}()|[\]\\]/g,
+  String.raw`\$&`,
+);
 const headingPattern = new RegExp(`^## ${escapedVersion}\\r?$`, 'm');
 const headingMatch = changelog.match(headingPattern);
 const startIndex = headingMatch?.index ?? -1;

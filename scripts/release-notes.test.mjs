@@ -6,15 +6,13 @@ import { fileURLToPath } from 'node:url';
 
 import { describe, expect, it } from 'vitest';
 
-const scriptPath = fileURLToPath(
-  new URL('./release-notes.mjs', import.meta.url),
-);
+const scriptPath = fileURLToPath(new URL('release-notes.mjs', import.meta.url));
 
 describe('release-notes', () => {
   it('prints usage and exits with code 1 when required args are missing', () => {
     expect(() =>
       execFileSync(process.execPath, [scriptPath], { encoding: 'utf8' }),
-    ).toThrowError(
+    ).toThrow(
       expect.objectContaining({
         status: 1,
         stderr: 'Usage: node release-notes.mjs <changelog-path> <version>\n',

@@ -7,11 +7,11 @@ settings:
 catalogs:
   default:
     '@rajzik/oxfmt-config':
-      specifier: 4.0.0
-      version: 4.0.0
+      specifier: 4.0.1
+      version: 4.0.1
     '@rajzik/oxlint-config':
-      specifier: 4.0.0
-      version: 4.0.0
+      specifier: 4.0.1
+      version: 4.0.1
     oxfmt:
       specifier: 0.45.0
       version: 0.45.0
@@ -37,10 +37,10 @@ importers:
         version: 2.30.0
       '@rajzik/oxfmt-config':
         specifier: 'catalog:'
-        version: 4.0.0
+        version: 4.0.1
       '@rajzik/oxlint-config':
         specifier: 'catalog:'
-        version: 4.0.0(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)
+        version: 4.0.1(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)
       oxfmt:
         specifier: 'catalog:'
         version: 0.45.0
@@ -639,16 +639,16 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rajzik/configs-shared@4.0.0':
-    resolution: {integrity: sha512-MkQS5T/YNMH6obT69fr6LbNDbu42cXKhLbKko910UPN6joMUHMNpMiUW5aPEKMt97UAuBJ8Dh07GfdK0Lo4LdA==}
+  '@rajzik/configs-shared@4.0.1':
+    resolution: {integrity: sha512-rAKBTlxxBOhd9Q4ioq4yT0uDWkxTHplEE/9HqfQRufSv8/WHEBny2TLgZS517/GiykrQEDb/vt/yOAHNmhMB/w==}
     engines: {node: ^21.2.0 || ^20.11.0 || >=22.16.0}
 
-  '@rajzik/oxfmt-config@4.0.0':
-    resolution: {integrity: sha512-DgFbgqYEJvURCeDm2lS8KOfiiAqcuSJv/kGVQVsT0+J3FsYwehi3mHJhOS2E0Jafxzb39g1WTBBjx/yPPRUdpg==}
+  '@rajzik/oxfmt-config@4.0.1':
+    resolution: {integrity: sha512-p/ZBEPnsIEIANFMCPLOJ2Of7P0T9dXv+irPuKR1IWfAzOpkK48Zal45dPUm41U92/uJxiYgSx81gO8hZdkXMMg==}
     engines: {node: ^21.2.0 || ^20.11.0 || >=22.16.0}
 
-  '@rajzik/oxlint-config@4.0.0':
-    resolution: {integrity: sha512-vmY4B9BLs7ecqGZuD6QR7aucft4OlpDqPTDr8Jz2cNxoy1bztLK/hSORAbGb09/9yQnMYijxDegVEKfpIGxU9A==}
+  '@rajzik/oxlint-config@4.0.1':
+    resolution: {integrity: sha512-6O+w6In/yotD5I98qYY0dk2CvgiY3YO/POtxYUzWb/c5lKNKTDXDmDg1Jc8oDebCdHmlS4U1DzOVZ4Vm9wDcmQ==}
     engines: {node: ^21.2.0 || ^20.11.0 || >=22.16.0}
     peerDependencies:
       oxlint: 1.61.0
@@ -3200,13 +3200,13 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.61.0':
     optional: true
 
-  '@rajzik/configs-shared@4.0.0': {}
+  '@rajzik/configs-shared@4.0.1': {}
 
-  '@rajzik/oxfmt-config@4.0.0': {}
+  '@rajzik/oxfmt-config@4.0.1': {}
 
-  '@rajzik/oxlint-config@4.0.0(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)':
+  '@rajzik/oxlint-config@4.0.1(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)':
     dependencies:
-      '@rajzik/configs-shared': 4.0.0
+      '@rajzik/configs-shared': 4.0.1
       eslint-plugin-react-hooks: 7.1.1(eslint@10.2.1)
       eslint-plugin-turbo: 2.9.6(eslint@10.2.1)(turbo@2.9.6)
       oxlint: 1.61.0(oxlint-tsgolint@0.21.1)

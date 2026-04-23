@@ -1,1 +1,1 @@
-export { default } from '@rajzik/oxfmt-config';
+export { fmt as default } from "@rajzik/oxfmt-config";

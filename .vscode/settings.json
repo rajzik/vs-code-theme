@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit",
+    "source.format.oxc": "explicit"
+  },
+  "oxc.unusedDisableDirectives": "warn",
+  "oxc.typeAware": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "typescript.native-preview.tsdk": "node_modules/@typescript/native-preview",
+  "typescript.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": true
+}

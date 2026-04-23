@@ -2,8 +2,8 @@ packages:
   - packages/*
 
 catalog:
-  "@rajzik/oxfmt-config": 4.0.0
-  "@rajzik/oxlint-config": 4.0.0
+  "@rajzik/oxfmt-config": 4.0.1
+  "@rajzik/oxlint-config": 4.0.1
   oxfmt: 0.45.0
   oxlint: 1.61.0
   oxlint-tsgolint: 0.21.1

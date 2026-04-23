@@ -45,4 +45,4 @@ jobs:
       - name: Publish to Visual Studio Marketplace
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: pnpm --filter rajzik-theme exec vsce publish --allow-package-all-secrets --allow-package-env-file -p "$VSCE_PAT"
+        run: pnpm --filter rajzik-theme exec vsce publish --skip-duplicate -p "$VSCE_PAT"

@@ -32,3 +32,6 @@ jobs:
 
       - name: Check formatting
         run: pnpm format
+
+      - name: Check linting
+        run: pnpm lint

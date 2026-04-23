@@ -34,7 +34,7 @@
   ],
   "scripts": {
     "format": "oxfmt --no-error-on-unmatched-pattern",
-    "package": "mkdir -p dist && vsce package --allow-package-all-secrets --allow-package-env-file --out dist/rajzik-theme.vsix",
+    "package": "mkdir -p dist && vsce package --out dist/rajzik-theme.vsix",
     "release": "pnpm run package"
   },
   "devDependencies": {
