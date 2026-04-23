@@ -38,7 +38,8 @@
     "release": "pnpm run package"
   },
   "devDependencies": {
-    "@vscode/vsce": "3.8.1"
+    "@vscode/vsce": "3.8.1",
+    "ovsx": "0.10.11"
   },
   "contributes": {
     "themes": [

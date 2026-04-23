@@ -68,3 +68,10 @@ jobs:
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: pnpm --filter rajzik-theme exec vsce publish --skip-duplicate -p "$VSCE_PAT"
+
+      - name: Publish to Open VSX Registry
+        if: steps.release.outputs.should_deploy == 'true'
+        env:
+          OVSX_PAT: ${{ secrets.OPEN_VSC_PAT }}
+        run: pnpm --filter rajzik-theme exec ovsx publish --skip-duplicate -p "$OVSX_PAT"
+
