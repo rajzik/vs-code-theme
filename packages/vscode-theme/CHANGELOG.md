@@ -1,5 +1,13 @@
 # rajzik-theme
 
+## 1.0.3
+
+### Patch Changes
+
+- [#9](https://github.com/rajzik/vs-code-theme/pull/9) [`c940e34`](https://github.com/rajzik/vs-code-theme/commit/c940e340e29ec7dabfc253ad9e4ab5524b9b6cdf) Thanks [@rajzik](https://github.com/rajzik)! - Update icon
+
+- [#9](https://github.com/rajzik/vs-code-theme/pull/9) [`c940e34`](https://github.com/rajzik/vs-code-theme/commit/c940e340e29ec7dabfc253ad9e4ab5524b9b6cdf) Thanks [@rajzik](https://github.com/rajzik)! - Update inlay hint color
+
 ## 1.0.2
 
 ### Patch Changes
