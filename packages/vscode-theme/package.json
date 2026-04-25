@@ -1,7 +1,7 @@
 {
   "name": "rajzik-theme",
   "displayName": "Rajzik theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A dark theme for Visual Studio Code",
   "categories": [
     "Themes"
