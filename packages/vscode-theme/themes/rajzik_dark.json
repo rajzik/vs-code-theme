@@ -70,11 +70,11 @@
     "editorIndentGuide.activeBackground1": "#E4E4E430",
     "editorIndentGuide.background1": "#E4E4E413",
     "editorInlayHint.background": "#00000000",
-    "editorInlayHint.foreground": "#E4E4E442",
+    "editorInlayHint.foreground": "#E4E4E480",
     "editorInlayHint.parameterBackground": "#00000000",
-    "editorInlayHint.parameterForeground": "#E4E4E442",
+    "editorInlayHint.parameterForeground": "#E4E4E480",
     "editorInlayHint.typeBackground": "#00000000",
-    "editorInlayHint.typeForeground": "#E4E4E442",
+    "editorInlayHint.typeForeground": "#E4E4E480",
     "editorLineNumber.activeForeground": "#FFFFFF",
     "editorLineNumber.foreground": "#E4E4E442",
     "editorLink.activeForeground": "#E4E4E4EB",
@@ -831,7 +831,8 @@
     {
       "scope": "variable.other.property",
       "settings": {
-        "foreground": "#98DCFE"
+        // "foreground": "#98DCFE"
+        "foreground": "#7AC0FF"
       }
     },
     {
