@@ -33,7 +33,8 @@
     "package.json"
   ],
   "scripts": {
-    "format": "oxfmt --no-error-on-unmatched-pattern",
+    "format": "oxfmt --check --no-error-on-unmatched-pattern",
+    "format:fix": "oxfmt --write --no-error-on-unmatched-pattern",
     "package": "mkdir -p dist && vsce package --out dist/rajzik-theme.vsix",
     "release": "pnpm run package"
   },

@@ -3,8 +3,8 @@ name: Release
 on:
   push:
     paths:
-      - ".changeset/**"
-      - "packages/**"
+      - '.changeset/**'
+      - 'packages/**'
     branches:
       - main
 

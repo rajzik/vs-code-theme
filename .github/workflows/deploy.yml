@@ -74,4 +74,3 @@ jobs:
         env:
           OVSX_PAT: ${{ secrets.OPEN_VSC_PAT }}
         run: pnpm --filter rajzik-theme exec ovsx publish --skip-duplicate -p "$OVSX_PAT"
-

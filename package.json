@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "changeset": "changeset",
-    "format": "oxfmt . && turbo run format --continue",
-    "format:fix": "oxfmt --write . && turbo run format --continue -- --write",
+    "format": "oxfmt --check . && turbo run format --continue",
+    "format:fix": "oxfmt --write . && turbo run format:fix --continue",
     "lint": "oxlint --type-aware --type-check",
     "package": "turbo run package",
     "release": "turbo run release",
