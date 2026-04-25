@@ -51,7 +51,7 @@
       }
     ]
   },
-  "icon": "assets/rajzik-dark.png",
+  "icon": "assets/rajzik-logo.png",
   "preview": false,
   "engines": {
     "vscode": "^1.100.0"
