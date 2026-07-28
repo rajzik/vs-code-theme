@@ -4,8 +4,8 @@ A dark editor theme with a calm charcoal surface, soft foreground contrast, and 
 
 ## Showcase
 
-| TypeScript | CSS | Java |
-| --- | --- | --- |
+| TypeScript                                                   | CSS                                            | Java                                             |
+| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------ |
 | ![TypeScript](./packages/vscode-theme/images/typescript.png) | ![CSS](./packages/vscode-theme/images/css.png) | ![Java](./packages/vscode-theme/images/java.png) |
 
 This repository uses `pnpm` workspaces and Turborepo to manage the editor theme packages in:
