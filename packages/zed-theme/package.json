@@ -1,0 +1,12 @@
+{
+  "name": "rajzik-zed-theme",
+  "version": "1.0.3",
+  "private": true,
+  "description": "A dark Rajzik theme extension for Zed",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "generate": "node ../../scripts/generate-zed-theme.mjs",
+    "package": "pnpm run generate"
+  }
+}

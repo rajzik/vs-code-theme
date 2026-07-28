@@ -1,31 +1,31 @@
-import { execFileSync } from 'node:child_process';
-import fs from 'node:fs';
+import { execFile as execFileCallback } from 'node:child_process';
+import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { promisify } from 'node:util';
 
 import { describe, expect, it } from 'vitest';
 
 const scriptPath = fileURLToPath(new URL('release-notes.mjs', import.meta.url));
+const execFile = promisify(execFileCallback);
 
 describe('release-notes', () => {
-  it('prints usage and exits with code 1 when required args are missing', () => {
-    expect(() =>
-      execFileSync(process.execPath, [scriptPath], { encoding: 'utf8' }),
-    ).toThrow(
-      expect.objectContaining({
-        status: 1,
-        stderr: 'Usage: node release-notes.mjs <changelog-path> <version>\n',
-      }),
-    );
+  it('prints usage and exits with code 1 when required args are missing', async () => {
+    await expect(
+      execFile(process.execPath, [scriptPath], { encoding: 'utf8' }),
+    ).rejects.toMatchObject({
+      code: 1,
+      stderr: 'Usage: node release-notes.mjs <changelog-path> <version>\n',
+    });
   });
 
-  it('prints fallback release text when the version heading is absent', () => {
-    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'release-notes-'));
+  it('prints fallback release text when the version heading is absent', async () => {
+    const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'release-notes-'));
     try {
       const changelogPath = path.join(tempDir, 'CHANGELOG.md');
 
-      fs.writeFileSync(
+      await fs.writeFile(
         changelogPath,
         `## 0.9.0
 
@@ -33,7 +33,7 @@ describe('release-notes', () => {
 `,
       );
 
-      const output = execFileSync(
+      const { stdout } = await execFile(
         process.execPath,
         [scriptPath, changelogPath, '1.0.0'],
         {
@@ -41,18 +41,18 @@ describe('release-notes', () => {
         },
       );
 
-      expect(output).toBe('Release 1.0.0');
+      expect(stdout).toBe('Release 1.0.0');
     } finally {
-      fs.rmSync(tempDir, { recursive: true, force: true });
+      await fs.rm(tempDir, { recursive: true, force: true });
     }
   });
 
-  it('outputs only the matching changelog section when the heading is present', () => {
-    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'release-notes-'));
+  it('outputs only the matching changelog section when the heading is present', async () => {
+    const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'release-notes-'));
     try {
       const changelogPath = path.join(tempDir, 'CHANGELOG.md');
 
-      fs.writeFileSync(
+      await fs.writeFile(
         changelogPath,
         `## 1.1.0
 
@@ -68,7 +68,7 @@ describe('release-notes', () => {
 `,
       );
 
-      const output = execFileSync(
+      const { stdout } = await execFile(
         process.execPath,
         [scriptPath, changelogPath, '1.0.0'],
         {
@@ -76,18 +76,18 @@ describe('release-notes', () => {
         },
       );
 
-      expect(output).toBe('## 1.0.0\n\n- Stable release notes');
+      expect(stdout).toBe('## 1.0.0\n\n- Stable release notes');
     } finally {
-      fs.rmSync(tempDir, { recursive: true, force: true });
+      await fs.rm(tempDir, { recursive: true, force: true });
     }
   });
 
-  it('selects the exact release heading instead of a prerelease heading', () => {
-    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'release-notes-'));
+  it('selects the exact release heading instead of a prerelease heading', async () => {
+    const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'release-notes-'));
     try {
       const changelogPath = path.join(tempDir, 'CHANGELOG.md');
 
-      fs.writeFileSync(
+      await fs.writeFile(
         changelogPath,
         `## 1.0.0-rc.1
 
@@ -99,7 +99,7 @@ describe('release-notes', () => {
 `,
       );
 
-      const output = execFileSync(
+      const { stdout } = await execFile(
         process.execPath,
         [scriptPath, changelogPath, '1.0.0'],
         {
@@ -107,9 +107,9 @@ describe('release-notes', () => {
         },
       );
 
-      expect(output).toBe('## 1.0.0\n\n- Stable release notes');
+      expect(stdout).toBe('## 1.0.0\n\n- Stable release notes');
     } finally {
-      fs.rmSync(tempDir, { recursive: true, force: true });
+      await fs.rm(tempDir, { recursive: true, force: true });
     }
   });
 });
