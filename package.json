@@ -13,15 +13,15 @@
     "version": "changeset version"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.7",
+    "@changesets/changelog-github": "catalog:",
+    "@changesets/cli": "catalog:",
     "@rajzik/oxfmt-config": "catalog:",
     "@rajzik/oxlint-config": "catalog:",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.8",
+    "prettier": "catalog:",
+    "turbo": "catalog:",
     "vitest": "catalog:"
   },
   "devEngines": {

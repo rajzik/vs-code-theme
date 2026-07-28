@@ -9,6 +9,14 @@
     {
       "matchDepTypes": ["pnpm.catalog.*"],
       "rangeStrategy": "bump"
+    },
+    {
+      "matchPackageNames": ["oxlint"],
+      "allowedVersions": "<=1.72.0"
+    },
+    {
+      "matchPackageNames": ["oxlint-tsgolint"],
+      "allowedVersions": "<=0.22.1"
     }
   ]
 }
