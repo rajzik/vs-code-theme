@@ -1,5 +1,15 @@
 # rajzik-theme
 
+## 1.0.4
+
+### Patch Changes
+
+- [#13](https://github.com/rajzik/vs-code-theme/pull/13) [`d9de86c`](https://github.com/rajzik/vs-code-theme/commit/d9de86cb7ed20e6b9ec9f3c555bd073c2aecba01) Thanks [@rajzik](https://github.com/rajzik)! - Adjust the Rajzik Dark sidebar section header colors to better match the rest of the sidebar styling.
+
+- [#19](https://github.com/rajzik/vs-code-theme/pull/19) [`723f046`](https://github.com/rajzik/vs-code-theme/commit/723f0463fd20d1ff27dd759c0047fc06ccd04bd5) Thanks [@rajzik](https://github.com/rajzik)! - Clean up the release notes tooling so linting stays warning-free and script coverage remains green.
+
+- [#18](https://github.com/rajzik/vs-code-theme/pull/18) [`45358d6`](https://github.com/rajzik/vs-code-theme/commit/45358d6681d8154c5194d2f8b63db0e140a900b2) Thanks [@rajzik](https://github.com/rajzik)! - Update Renovate so pnpm catalog dependencies and the lockfile are kept current automatically.
+
 ## 1.0.3
 
 ### Patch Changes
