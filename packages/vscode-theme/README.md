@@ -31,6 +31,8 @@ pnpm --filter rajzik-theme run package
 
 To test the extension locally, launch this workspace from VS Code and use the `Launch Extension` configuration.
 
+Syntax highlighting samples live in [`examples/`](./examples/). Open them in the Extension Development Host with **Rajzik Dark** selected to audit token colors — see [`examples/README.md`](./examples/README.md) for the checklist.
+
 ## Package
 
 The extension package is generated at `packages/vscode-theme/dist/rajzik-theme.vsix`:

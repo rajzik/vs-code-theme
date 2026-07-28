@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "rajzik-theme-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Syntax highlighting samples for Rajzik Dark",
+  "keywords": ["theme", "vscode", "syntax"],
+  "author": {
+    "name": "Rajzik",
+    "url": "https://github.com/rajzik"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "vscode": "^1.100.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "rajzik-dark",
+        "label": "Rajzik Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rajzik_dark.json"
+      }
+    ]
+  },
+  "config": {
+    "semanticHighlighting": true,
+    "editor": {
+      "fontSize": 14,
+      "tabSize": 2,
+      "wordWrap": "on"
+    },
+    "workbench": {
+      "colorTheme": "Rajzik Dark"
+    }
+  },
+  "colors": {
+    "editor.background": "#181818",
+    "editor.foreground": "#E4E4E4EB",
+    "activityBar.background": "#141414"
+  },
+  "scopes": [
+    "comment",
+    "keyword",
+    "storage.type",
+    "entity.name.function",
+    "string",
+    "constant.numeric",
+    "support.constant.json"
+  ],
+  "nullValue": null,
+  "enabled": true,
+  "retries": 3,
+  "timeoutMs": 5000
+}

@@ -1,0 +1,17 @@
+# Rajzik Dark — Git rebase todo sample
+# Exercises support.function.git-rebase and constant.sha.git-rebase scopes
+
+pick a1b2c3d4e5f6789012345678abcdef0123456789 Initial commit
+reword b2c3d4e5f6789012345678abcdef0123456789a1 Add theme assets
+squash c3d4e5f6789012345678abcdef0123456789a1b2 Combine changelog entries
+fixup d4e5f6789012345678abcdef0123456789a1b2c3 Fix typo in README
+exec e5f6789012345678abcdef0123456789a1b2c3d4 npm test
+break f6789012345678abcdef0123456789a1b2c3d4e5 Pause for review
+drop 789012345678abcdef0123456789a1b2c3d4e5f6 Remove obsolete script
+label theme-release
+reset 89012345678abcdef01234556789a1b2c3d4e5f
+merge -C 9012345678abcdef0123456789a1b2c3d4e5f6 feature-branch
+
+# Comments in rebase todo use standard comment scopes
+# SHA values use constant.sha.git-rebase
+# Commands use support.function.git-rebase
