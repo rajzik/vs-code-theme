@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@rajzik/oxfmt-config':
-      specifier: 4.0.1
-      version: 4.0.1
+      specifier: 4.0.4
+      version: 4.0.4
     '@rajzik/oxlint-config':
       specifier: 4.0.1
       version: 4.0.1
@@ -37,7 +37,7 @@ importers:
         version: 2.31.0
       '@rajzik/oxfmt-config':
         specifier: 'catalog:'
-        version: 4.0.1
+        version: 4.0.4
       '@rajzik/oxlint-config':
         specifier: 'catalog:'
         version: 4.0.1(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)
@@ -740,8 +740,8 @@ packages:
     resolution: {integrity: sha512-rAKBTlxxBOhd9Q4ioq4yT0uDWkxTHplEE/9HqfQRufSv8/WHEBny2TLgZS517/GiykrQEDb/vt/yOAHNmhMB/w==}
     engines: {node: ^21.2.0 || ^20.11.0 || >=22.16.0}
 
-  '@rajzik/oxfmt-config@4.0.1':
-    resolution: {integrity: sha512-p/ZBEPnsIEIANFMCPLOJ2Of7P0T9dXv+irPuKR1IWfAzOpkK48Zal45dPUm41U92/uJxiYgSx81gO8hZdkXMMg==}
+  '@rajzik/oxfmt-config@4.0.4':
+    resolution: {integrity: sha512-lnQ114VvC5+imJd3DSsi22MWAa8kzQO581eoOofo7HVxkvtwdW1PJwQui72HjZe/JmxETikYMKzR4HYXI7rRxg==}
     engines: {node: ^21.2.0 || ^20.11.0 || >=22.16.0}
 
   '@rajzik/oxlint-config@4.0.1':
@@ -2578,6 +2578,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   validate-npm-package-license@3.0.4:
@@ -3423,7 +3424,7 @@ snapshots:
 
   '@rajzik/configs-shared@4.0.1': {}
 
-  '@rajzik/oxfmt-config@4.0.1': {}
+  '@rajzik/oxfmt-config@4.0.4': {}
 
   '@rajzik/oxlint-config@4.0.1(eslint@10.2.1)(oxlint-tsgolint@0.21.1)(oxlint@1.61.0(oxlint-tsgolint@0.21.1))(turbo@2.9.6)':
     dependencies:
