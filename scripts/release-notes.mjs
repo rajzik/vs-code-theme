@@ -30,7 +30,8 @@ async function main() {
     nextHeadingMatch === null
       ? -1
       : startIndex + headingMatch[0].length + nextHeadingMatch.index;
-  const endIndex = nextHeadingIndex === -1 ? changelog.length : nextHeadingIndex;
+  const endIndex =
+    nextHeadingIndex === -1 ? changelog.length : nextHeadingIndex;
   const notes = changelog.slice(startIndex, endIndex).trim();
 
   process.stdout.write(notes);
