@@ -8,6 +8,20 @@ A dark Visual Studio Code theme with a calm charcoal editor surface, soft foregr
 - Balanced UI colors for the activity bar, side bar, editor, panels, diffs, and notifications.
 - Syntax colors tuned for readable contrast without an overly saturated palette.
 
+## Showcase
+
+### TypeScript
+
+![TypeScript syntax highlighting](./images/typescript.png)
+
+### CSS
+
+![CSS syntax highlighting](./images/css.png)
+
+### Java
+
+![Java syntax highlighting](./images/java.png)
+
 ## Installation
 
 Install the theme from one of the extension registries:
