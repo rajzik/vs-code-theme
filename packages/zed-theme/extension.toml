@@ -1,0 +1,7 @@
+id = "rajzik-theme"
+name = "Rajzik Theme"
+version = "1.0.3"
+schema_version = 1
+authors = ["Rajzik"]
+description = "A dark theme for Zed generated from the Rajzik VS Code theme."
+repository = "https://github.com/rajzik/vs-code-theme"
