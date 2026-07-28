@@ -1,0 +1,85 @@
+# Rajzik Dark — YAML syntax sample
+---
+name: rajzik-dark
+version: 1.0.4
+description: Syntax highlighting samples for theme auditing
+private: true
+
+metadata:
+  author: Rajzik
+  license: MIT
+  repository: https://github.com/rajzik/vs-code-theme
+
+engines:
+  node: '>=18.0.0'
+  vscode: '^1.100.0'
+
+config:
+  semanticHighlighting: true
+  editor:
+    fontSize: 14
+    tabSize: 2
+    wordWrap: on
+  workbench:
+    colorTheme: Rajzik Dark
+
+colors:
+  editor.background: '#181818'
+  editor.foreground: '#E4E4E4EB'
+  activityBar.background: '#141414'
+  sideBar.background: '#141414'
+
+scopes:
+  - comment
+  - keyword
+  - storage.type
+  - entity.name.function
+  - string
+  - constant.numeric
+  - support.constant.json
+  - variable
+  - entity.name.tag
+
+examples:
+  core:
+    - typescript.ts
+    - javascript.js
+    - html.html
+    - css.css
+    - less.less
+    - scss.scss
+    - json.json
+    - markdown.md
+    - python.py
+    - java.java
+    - diff.diff
+    - git-rebase.txt
+  broader:
+    - go.go
+    - rust.rs
+    - yaml.yaml
+    - shell.sh
+    - sql.sql
+    - php.php
+    - cpp.cpp
+
+settings:
+  retries: 3
+  timeout_ms: 5000
+  enabled: true
+  null_value: null
+
+multiline: |
+  This is a folded block scalar.
+  It spans multiple lines for YAML structure highlighting.
+
+folded: >
+  This folded scalar
+  continues on the next line
+  when rendered.
+
+anchors: &theme_anchor
+  id: rajzik-dark
+  label: Rajzik Dark
+
+alias: *theme_anchor

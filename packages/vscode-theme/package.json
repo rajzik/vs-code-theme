@@ -26,6 +26,7 @@
   "publisher": "rajzik",
   "files": [
     "assets",
+    "images",
     "themes",
     "CHANGELOG.md",
     "LICENSE",

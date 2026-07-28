@@ -1,0 +1,41 @@
+diff --git a/packages/vscode-theme/themes/rajzik_dark.json b/packages/vscode-theme/themes/rajzik_dark.json
+index a1b2c3d..e4f5g6h 100644
+--- a/packages/vscode-theme/themes/rajzik_dark.json
++++ b/packages/vscode-theme/themes/rajzik_dark.json
+@@ -1,6 +1,7 @@
+ {
+   "$schema": "vscode://schemas/color-theme",
+   "name": "Rajzik Dark",
++  "description": "Dark theme for long coding sessions",
+   "colors": {
+     "editor.background": "#181818",
+     "editor.foreground": "#E4E4E4EB",
+diff --git a/packages/vscode-theme/examples/README.md b/packages/vscode-theme/examples/README.md
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/packages/vscode-theme/examples/README.md
+@@ -0,0 +1,10 @@
++# Syntax highlighting examples
++
++Local-only sample files for auditing Rajzik Dark.
++
++## How to use
++
++1. Launch Extension
++2. Select Rajzik Dark
++3. Open files in this folder
+diff --git a/packages/vscode-theme/package.json b/packages/vscode-theme/package.json
+index 1111111..2222222 100644
+--- a/packages/vscode-theme/package.json
++++ b/packages/vscode-theme/package.json
+@@ -26,7 +26,8 @@
+   "files": [
+     "assets",
+     "themes",
+-    "CHANGELOG.md"
++    "CHANGELOG.md",
++    "LICENSE"
+   ],
+   "scripts": {
+     "package": "vsce package --out dist/rajzik-theme.vsix"

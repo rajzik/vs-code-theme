@@ -7,6 +7,9 @@
     "format:fix": {
       "cache": false
     },
+    "generate": {
+      "outputs": ["themes/**"]
+    },
     "package": {
       "dependsOn": ["^package"],
       "outputs": ["dist/**"]

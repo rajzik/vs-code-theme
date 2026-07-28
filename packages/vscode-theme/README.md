@@ -8,6 +8,20 @@ A dark Visual Studio Code theme with a calm charcoal editor surface, soft foregr
 - Balanced UI colors for the activity bar, side bar, editor, panels, diffs, and notifications.
 - Syntax colors tuned for readable contrast without an overly saturated palette.
 
+## Showcase
+
+### TypeScript
+
+![TypeScript syntax highlighting](./images/typescript.png)
+
+### CSS
+
+![CSS syntax highlighting](./images/css.png)
+
+### Java
+
+![Java syntax highlighting](./images/java.png)
+
 ## Installation
 
 Install the theme from one of the extension registries:
@@ -30,6 +44,8 @@ pnpm --filter rajzik-theme run package
 ```
 
 To test the extension locally, launch this workspace from VS Code and use the `Launch Extension` configuration.
+
+Syntax highlighting samples live in [`examples/`](./examples/). Open them in the Extension Development Host with **Rajzik Dark** selected to audit token colors — see [`examples/README.md`](./examples/README.md) for the checklist.
 
 ## Package
 

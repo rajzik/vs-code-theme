@@ -1,0 +1,84 @@
+// Rajzik Dark — Less syntax sample
+
+@color-primary: #81a1c1;
+@color-bg: #181818;
+@color-fg: #e4e4e4eb;
+@spacing: 8px;
+@border-radius: 4px;
+
+// Mixins
+.border-radius(@radius: @border-radius) {
+  border-radius: @radius;
+}
+
+.flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Nested selectors
+.theme-preview {
+  background-color: @color-bg;
+  color: @color-fg;
+  padding: @spacing * 2;
+
+  header {
+    .flex-center();
+    justify-content: space-between;
+    margin-bottom: @spacing * 3;
+
+    h1 {
+      font-size: 1.5rem;
+      color: @color-primary;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: @spacing * 2;
+
+    li a {
+      color: #88c0d0;
+      text-decoration: none;
+
+      &:visited {
+        color: #7cafc2;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Parametric mixin
+.button-variant(@bg, @fg) {
+  background-color: @bg;
+  color: @fg;
+  .border-radius();
+  padding: (@spacing / 2) @spacing;
+  border: 1px solid darken(@bg, 10%);
+
+  &:hover {
+    background-color: lighten(@bg, 5%);
+  }
+}
+
+.btn-primary {
+  .button-variant(@color-primary, #191c22);
+}
+
+// Operations and units
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: @spacing;
+  min-height: calc(100vh - 4rem);
+}

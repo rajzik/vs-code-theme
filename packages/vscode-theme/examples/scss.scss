@@ -1,0 +1,85 @@
+// Rajzik Dark — SCSS syntax sample
+
+$color-primary: #81a1c1;
+$color-bg: #181818;
+$color-fg: #e4e4e4eb;
+$spacing: 8px;
+$border-radius: 4px;
+
+// Mixins
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-variant($bg, $fg) {
+  background-color: $bg;
+  color: $fg;
+  border-radius: $border-radius;
+  padding: ($spacing / 2) $spacing;
+  border: 1px solid darken($bg, 10%);
+
+  &:hover {
+    background-color: lighten($bg, 5%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #88c0d0;
+    outline-offset: 2px;
+  }
+}
+
+// Nested selectors with parent reference
+.theme-preview {
+  background-color: $color-bg;
+  color: $color-fg;
+  padding: $spacing * 2;
+
+  header {
+    @include flex-center;
+    justify-content: space-between;
+    margin-bottom: $spacing * 3;
+
+    h1 {
+      font-size: 1.5rem;
+      color: $color-primary;
+
+      &::before {
+        content: '◆ ';
+        color: #569cd6;
+      }
+    }
+  }
+
+  // BEM-style nesting
+  &__section {
+    margin-bottom: $spacing * 4;
+
+    &--highlighted {
+      border-left: 3px solid $color-primary;
+      padding-left: $spacing;
+    }
+  }
+}
+
+.btn-primary {
+  @include button-variant($color-primary, #191c22);
+}
+
+// Map and each loop
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+);
+
+@each $name, $width in $breakpoints {
+  @media (min-width: $width) {
+    .container-#{$name} {
+      max-width: $width;
+      margin: 0 auto;
+    }
+  }
+}
