@@ -7,7 +7,7 @@
     }
   ],
   "commit": false,
-  "fixed": ["rajzik-theme", "rajzik-zed-theme"],
+  "fixed": [["rajzik-theme", "rajzik-zed-theme"]],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
