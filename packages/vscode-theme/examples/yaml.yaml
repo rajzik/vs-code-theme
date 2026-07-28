@@ -1,5 +1,4 @@
 # Rajzik Dark — YAML syntax sample
-
 ---
 name: rajzik-dark
 version: 1.0.4
@@ -12,8 +11,8 @@ metadata:
   repository: https://github.com/rajzik/vs-code-theme
 
 engines:
-  node: ">=18.0.0"
-  vscode: "^1.100.0"
+  node: '>=18.0.0'
+  vscode: '^1.100.0'
 
 config:
   semanticHighlighting: true
@@ -25,10 +24,10 @@ config:
     colorTheme: Rajzik Dark
 
 colors:
-  editor.background: "#181818"
-  editor.foreground: "#E4E4E4EB"
-  activityBar.background: "#141414"
-  sideBar.background: "#141414"
+  editor.background: '#181818'
+  editor.foreground: '#E4E4E4EB'
+  activityBar.background: '#141414'
+  sideBar.background: '#141414'
 
 scopes:
   - comment

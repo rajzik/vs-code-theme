@@ -47,7 +47,7 @@ $border-radius: 4px;
       color: $color-primary;
 
       &::before {
-        content: "◆ ";
+        content: '◆ ';
         color: #569cd6;
       }
     }
@@ -70,9 +70,9 @@ $border-radius: 4px;
 
 // Map and each loop
 $breakpoints: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
 );
 
 @each $name, $width in $breakpoints {

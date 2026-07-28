@@ -7,6 +7,7 @@ export default defineConfig(
     node: true,
     turbo: true,
     overrides: {
+      ignorePatterns: ['examples'],
       rules: {
         'import/unambiguous': 'allow',
         'unicorn/no-process-exit': 'allow',

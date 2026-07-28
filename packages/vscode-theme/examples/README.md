@@ -13,32 +13,32 @@ Local-only sample files for auditing **Rajzik Dark** token colors. Open them in 
 
 ### Core languages
 
-| File | Scopes to verify |
-|------|------------------|
-| `typescript.ts` | keywords, types, classes, enums, template strings, regex, control flow, object keys, constants |
-| `javascript.js` | keywords, strings, interpolation, regex, control flow, object keys |
-| `html.html` | tags, attributes, tag punctuation |
-| `css.css` | selectors, properties, units, colors, pseudo-classes/elements |
-| `less.less` | variables, nesting, mixins, selectors |
-| `scss.scss` | variables, nesting, mixins, selectors |
-| `json.json` | keys, values, support constants |
-| `markdown.md` | headings, bold/italic/strike, lists, quotes, inline raw, links |
-| `python.py` | comments, dict keys, logical operators, builtins |
-| `java.java` | package/import modifiers, types, annotations |
-| `diff.diff` | inserted, deleted, changed, diff headers |
-| `git-rebase.txt` | `support.function.git-rebase`, `constant.sha.git-rebase` |
+| File             | Scopes to verify                                                                               |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| `typescript.ts`  | keywords, types, classes, enums, template strings, regex, control flow, object keys, constants |
+| `javascript.js`  | keywords, strings, interpolation, regex, control flow, object keys                             |
+| `html.html`      | tags, attributes, tag punctuation                                                              |
+| `css.css`        | selectors, properties, units, colors, pseudo-classes/elements                                  |
+| `less.less`      | variables, nesting, mixins, selectors                                                          |
+| `scss.scss`      | variables, nesting, mixins, selectors                                                          |
+| `json.json`      | keys, values, support constants                                                                |
+| `markdown.md`    | headings, bold/italic/strike, lists, quotes, inline raw, links                                 |
+| `python.py`      | comments, dict keys, logical operators, builtins                                               |
+| `java.java`      | package/import modifiers, types, annotations                                                   |
+| `diff.diff`      | inserted, deleted, changed, diff headers                                                       |
+| `git-rebase.txt` | `support.function.git-rebase`, `constant.sha.git-rebase`                                       |
 
 ### Broader languages
 
-| File | Scopes to verify |
-|------|------------------|
-| `go.go` | `storage.type.*`, keywords, functions |
-| `rust.rs` | types, macros, keywords, lifetimes |
-| `yaml.yaml` | keys, strings, structure |
-| `shell.sh` | comments, strings, variables |
-| `sql.sql` | keywords, identifiers, strings |
-| `php.php` | `<?php ?>` embedded punctuation, variables |
-| `cpp.cpp` | preprocessor, operators, labels |
+| File        | Scopes to verify                           |
+| ----------- | ------------------------------------------ |
+| `go.go`     | `storage.type.*`, keywords, functions      |
+| `rust.rs`   | types, macros, keywords, lifetimes         |
+| `yaml.yaml` | keys, strings, structure                   |
+| `shell.sh`  | comments, strings, variables               |
+| `sql.sql`   | keywords, identifiers, strings             |
+| `php.php`   | `<?php ?>` embedded punctuation, variables |
+| `cpp.cpp`   | preprocessor, operators, labels            |
 
 ### Cross-cutting scopes
 

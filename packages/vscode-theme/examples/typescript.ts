@@ -34,7 +34,7 @@ class ThemeValidator {
       return { ok: false, error: new Error(`Invalid semver: ${input}`) };
     }
 
-  const [, major, minor, patch] = match;
+    const [, major, minor, patch] = match;
     return {
       ok: true,
       value: {
@@ -49,7 +49,7 @@ class ThemeValidator {
     const issues: string[] = [];
 
     for (const file of files) {
-      if (!file.endsWith(".ts") && !file.endsWith(".tsx")) {
+      if (!file.endsWith('.ts') && !file.endsWith('.tsx')) {
         continue;
       }
 
@@ -75,18 +75,18 @@ const summary = `Theme audit: ${MAX_RETRIES} retries, timeout ${DEFAULT_TIMEOUT_
 
 // Object literal keys and shorthand
 const config = {
-  theme: "rajzik-dark",
+  theme: 'rajzik-dark',
   semanticHighlighting: true,
   retries: MAX_RETRIES,
 };
 
 // Control flow
 switch (config.theme) {
-  case "rajzik-dark":
+  case 'rajzik-dark':
     console.log(summary);
     break;
   default:
-    throw new Error("Unknown theme");
+    throw new Error('Unknown theme');
 }
 
 // Regex with character classes and quantifiers

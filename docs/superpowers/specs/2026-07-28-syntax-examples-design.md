@@ -57,30 +57,30 @@ packages/vscode-theme/
 
 ### Core (scopes already in theme)
 
-| File | Focus |
-|------|--------|
-| `typescript.ts` | keywords, types, classes, enums, template strings, regex, control flow, object keys, constants |
-| `javascript.js` | same without TS types; string interpolation |
-| `html.html` | tags, attributes, tag punctuation |
-| `css.css`, `less.less`, `scss.scss` | selectors, properties, units, colors, pseudo-classes/elements |
-| `json.json` | keys/values, JSON support constants |
-| `markdown.md` | headings, bold/italic/strike, lists, quotes, inline raw, links |
-| `python.py` | comments, dict keys, logical operators, builtins |
-| `java.java` | package/import modifiers, types, annotations |
-| `diff.diff` | inserted/deleted/changed, diff headers |
-| `git-rebase.txt` | `support.function.git-rebase`, `constant.sha.git-rebase` |
+| File                                | Focus                                                                                          |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `typescript.ts`                     | keywords, types, classes, enums, template strings, regex, control flow, object keys, constants |
+| `javascript.js`                     | same without TS types; string interpolation                                                    |
+| `html.html`                         | tags, attributes, tag punctuation                                                              |
+| `css.css`, `less.less`, `scss.scss` | selectors, properties, units, colors, pseudo-classes/elements                                  |
+| `json.json`                         | keys/values, JSON support constants                                                            |
+| `markdown.md`                       | headings, bold/italic/strike, lists, quotes, inline raw, links                                 |
+| `python.py`                         | comments, dict keys, logical operators, builtins                                               |
+| `java.java`                         | package/import modifiers, types, annotations                                                   |
+| `diff.diff`                         | inserted/deleted/changed, diff headers                                                         |
+| `git-rebase.txt`                    | `support.function.git-rebase`, `constant.sha.git-rebase`                                       |
 
 ### Broader (shared / fallback scopes)
 
-| File | Why |
-|------|-----|
-| `go.go` | Go `storage.type.*` scopes in theme |
-| `rust.rs` | types, macros, keywords |
-| `yaml.yaml` | keys, strings, structure |
-| `shell.sh` | comments, strings, variables |
-| `sql.sql` | keywords, identifiers |
-| `php.php` | `<?php ?>` embedded punctuation |
-| `cpp.cpp` | preprocessor, operators, labels |
+| File        | Why                                 |
+| ----------- | ----------------------------------- |
+| `go.go`     | Go `storage.type.*` scopes in theme |
+| `rust.rs`   | types, macros, keywords             |
+| `yaml.yaml` | keys, strings, structure            |
+| `shell.sh`  | comments, strings, variables        |
+| `sql.sql`   | keywords, identifiers               |
+| `php.php`   | `<?php ?>` embedded punctuation     |
+| `cpp.cpp`   | preprocessor, operators, labels     |
 
 ## Usage
 

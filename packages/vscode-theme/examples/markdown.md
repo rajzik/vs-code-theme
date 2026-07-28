@@ -2,7 +2,7 @@
 
 ## Headings and emphasis
 
-This document exercises **bold**, *italic*, ***bold italic***, and ~~strikethrough~~ text.
+This document exercises **bold**, _italic_, _**bold italic**_, and ~~strikethrough~~ text.
 
 ### Inline code and links
 
@@ -33,7 +33,7 @@ Task list:
 ## Code block
 
 ```typescript
-const theme = "rajzik-dark";
+const theme = 'rajzik-dark';
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -41,11 +41,11 @@ export function greet(name: string): string {
 
 ## Table
 
-| Scope        | Color     | Example        |
-| ------------ | --------- | -------------- |
-| `comment`    | `#57A64A` | `// note`      |
-| `string`     | `#CE9178` | `"hello"`      |
-| `keyword`    | `#569CD6` | `const`        |
+| Scope     | Color     | Example   |
+| --------- | --------- | --------- |
+| `comment` | `#57A64A` | `// note` |
+| `string`  | `#CE9178` | `"hello"` |
+| `keyword` | `#569CD6` | `const`   |
 
 ## Horizontal rule
 

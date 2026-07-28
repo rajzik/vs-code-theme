@@ -1,10 +1,11 @@
 // Rajzik Dark — JavaScript syntax sample
 
 const MAX_ITEMS = 100;
-const API_BASE = "https://api.example.com/v1";
+const API_BASE = 'https://api.example.com/v1';
 
 /**
  * Fetches paginated items and maps them to a display label.
+ *
  * @param {string} endpoint
  * @param {number} page
  * @returns {Promise<string[]>}
@@ -38,7 +39,7 @@ class EventBus {
 }
 
 // String interpolation in template literals
-const greeting = `Hello, ${process.env.USER ?? "developer"}!`;
+const greeting = `Hello, ${process.env.USER ?? 'developer'}!`;
 const multiline = `
   Theme: Rajzik Dark
   Items: ${MAX_ITEMS}
@@ -47,9 +48,9 @@ const multiline = `
 
 // Object keys and computed property
 const settings = {
-  theme: "rajzik-dark",
+  theme: 'rajzik-dark',
   fontSize: 14,
-  ["lineHeight"]: 1.5,
+  ['lineHeight']: 1.5,
   features: {
     bracketPairColorization: true,
     semanticHighlighting: true,
@@ -59,11 +60,11 @@ const settings = {
 // Control flow and logical operators
 function classify(score) {
   if (score >= 90) {
-    return "excellent";
+    return 'excellent';
   } else if (score >= 70 && score < 90) {
-    return "good";
+    return 'good';
   } else {
-    return "needs-work";
+    return 'needs-work';
   }
 }
 
