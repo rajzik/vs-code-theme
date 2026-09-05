@@ -56,6 +56,6 @@
   "icon": "assets/rajzik-logo.png",
   "preview": false,
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.136.1"
   }
 }
